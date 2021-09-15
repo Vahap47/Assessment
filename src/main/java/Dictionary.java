@@ -25,18 +25,15 @@ public class Dictionary {
         List<String> dictionary = getDictionary();
         input = input.toLowerCase();
 
-        // for each word in dictionary
-        for (String word : dictionary) {
-            //System.out.println(word);
 
-            // match flag
+        for (String word : dictionary) {
+
             Boolean nonMatch = true;
 
             for (char chWord : word.toCharArray()) {
                 String w = Character.toString(chWord);
 
-                // if the count of chW in word is equal to its count in input,
-                // then, they are match
+
                 if (word.length() - word.replace(w, "").length() !=
                         input.length() - input.replace(w, "").length()) {
                     nonMatch = false;

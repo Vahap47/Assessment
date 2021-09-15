@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// @RunWith attaches a runner with the test class to initialize the test data
+
 @RunWith(MockitoJUnitRunner.class)
 public class DictionaryTester {
 
