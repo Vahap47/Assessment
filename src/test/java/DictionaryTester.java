@@ -32,10 +32,7 @@ public class DictionaryTester {
         dictionaryList = dictService.getDictionary();
     }
 
-    /**
-     * Create String list based on the Dictionary file (EnglishWords in this case) to mock the dictionary service
-     * @return String list with the dictionary content
-     */
+
     static List<String> createDictionaryArray() {
         List<String> listDictionary = new ArrayList<String>();
         BufferedReader reader;
@@ -57,11 +54,7 @@ public class DictionaryTester {
         return listDictionary;
     }
 
-    /**
-     * Validate if given word exists in the dictionary (EnglishWords in this case) to mock the isEnglishWord function
-     * @param word
-     * @return boolean based if the word was found in the dictionary
-     */
+
     public boolean isThisEnglish(String word) {
         for (String w : dictionaryList) {
             if (w.equals(word.toLowerCase())) {
@@ -71,8 +64,6 @@ public class DictionaryTester {
         }
         return false;
     }
-
-
 
 
 
